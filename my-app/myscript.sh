@@ -16,8 +16,6 @@ ARTIFACT_BUCKET="gs://hosinte_cloudbuild"
 # Clone the repository
 git clone $REPO_URL
 
-ls
-
 cd test-1/my-app
 
 # Authenticate with Google Cloud SDK
@@ -25,8 +23,7 @@ gcloud auth login
 gcloud config set project hostinte
 
 # Submit the build to Cloud Build
-gcloud builds submit --config=$CLOUDBUILD_CONFIG --substitutions=_DOCKERFILE=$DOCKERFILE_PATH,_ARTIFACT_BUCKET=$ARTIFACT_BUCKET
-
+gcloud builds submit --config=$CLOUDBUILD_CONFIG 
 # Retrieve the artifact URL from Cloud Build history
 BUILD_ID=$(gcloud builds list --limit=1 --format="value(ID)")
 BUILD_STATUS=$(gcloud builds describe $BUILD_ID --format="value(status)")
