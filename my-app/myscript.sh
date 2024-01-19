@@ -18,7 +18,7 @@ git clone $REPO_URL
 
 ls
 
-cd /test-1/my-app
+cd test-1/my-app
 
 # Authenticate with Google Cloud SDK
 gcloud auth login
