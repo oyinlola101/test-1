@@ -2,13 +2,13 @@
 
 # Set your project ID and repository URL
 PROJECT_ID="hostinte"
-REPO_URL="https://github.com/oyinlola101/create-react-app.git"
+REPO_URL="https://github.com/oyinlola101/test-1.git"
 
 # Set the name of the Dockerfile in the repository
-DOCKERFILE_PATH="/my-app/Dockerfile"
+DOCKERFILE_PATH="/test-1/my-app/Dockerfile"
 
 # Set the Cloud Build configuration file (cloudbuild.yaml) in the repository
-CLOUDBUILD_CONFIG="/my-app/cloudbuild.yaml"
+CLOUDBUILD_CONFIG="/test-1/my-app/cloudbuild.yaml"
 
 # Set the Cloud Storage bucket for Cloud Build artifacts
 ARTIFACT_BUCKET="gs://hosinte_cloudbuild"
@@ -16,7 +16,7 @@ ARTIFACT_BUCKET="gs://hosinte_cloudbuild"
 # Clone the repository
 git clone $REPO_URL
 
-cd my-app
+cd /test-1/my-app
 
 # Authenticate with Google Cloud SDK
 gcloud auth login
