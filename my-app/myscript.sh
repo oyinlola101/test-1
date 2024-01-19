@@ -16,6 +16,8 @@ ARTIFACT_BUCKET="gs://hosinte_cloudbuild"
 # Clone the repository
 git clone $REPO_URL
 
+ls
+
 cd /test-1/my-app
 
 # Authenticate with Google Cloud SDK
