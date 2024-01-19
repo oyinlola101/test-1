@@ -5,10 +5,10 @@ PROJECT_ID="hostinte"
 REPO_URL="https://github.com/oyinlola101/test-1.git"
 
 # Set the name of the Dockerfile in the repository
-DOCKERFILE_PATH="/test-1/my-app/Dockerfile"
+DOCKERFILE_PATH="Dockerfile"
 
 # Set the Cloud Build configuration file (cloudbuild.yaml) in the repository
-CLOUDBUILD_CONFIG="/test-1/my-app/cloudbuild.yaml"
+CLOUDBUILD_CONFIG="cloudbuild.yaml"
 
 # Set the Cloud Storage bucket for Cloud Build artifacts
 ARTIFACT_BUCKET="gs://hosinte_cloudbuild"
